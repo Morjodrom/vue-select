@@ -162,6 +162,9 @@
 	.v-select.single.searching:not(.open):not(.loading) input[type="search"] {
 		opacity: .2;
 	}
+	.v-select.single.searching.autocomplete:not(.open):not(.loading) input[type="search"] {
+		opacity: 0;
+	}
 
 	/* Search Input */
 	.v-select input[type="search"]::-webkit-search-decoration,
@@ -860,6 +863,7 @@
 					open: this.dropdownOpen,
 					single: !this.multiple,
 					searching: this.searching,
+					autocomplete: this.autocompleteMode,
 					searchable: this.searchable,
 					unsearchable: !this.searchable,
 					loading: this.mutableLoading,

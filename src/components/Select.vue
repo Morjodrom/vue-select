@@ -2,6 +2,7 @@
 	.v-select {
 		position: relative;
 		font-family: sans-serif;
+		background: #fff;
 	}
 	.v-select .disabled {
 		cursor: not-allowed !important;
@@ -164,6 +165,7 @@
 	}
 	.v-select.single.searching.autocomplete:not(.open):not(.loading) input[type="search"] {
 		opacity: 0;
+		width: 10px !important;
 	}
 
 	/* Search Input */
